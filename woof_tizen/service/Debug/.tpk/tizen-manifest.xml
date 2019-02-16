@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="org.woof" version="1.0.0">
+    <profile name="wearable"/>
+    <service-application appid="org.woof.app2" exec="service" multiple="false" nodisplay="true" taskmanage="false" type="capp">
+        <label>woof</label>
+        <icon>testservice.png</icon>
+        <metadata key="accessory-services-location" value="/res/xml/accessoryservices.xml"/>
+        <metadata key="launch-on-attach" value="false"/>
+    </service-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/bluetooth</privilege>
+        <privilege>http://tizen.org/privilege/keymanager</privilege>
+        <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+        <privilege>http://tizen.org/privilege/datasharing</privilege>
+        <privilege>http://tizen.org/privilege/content.write</privilege>
+    </privileges>
+    <feature name="http://tizen.org/feature/network.bluetooth">true</feature>
+    <feature name="http://tizen.org/feature/screen.size.normal">true</feature>
+    <feature name="http://tizen.org/feature/screen.shape.circle">true</feature>
+    <feature name="http://tizen.org/feature/network.push">true</feature>
+</manifest>

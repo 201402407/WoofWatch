@@ -1,0 +1,6 @@
+set sysroot /home/leehaewon/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.3.1/wearable/rootstraps/wearable-2.3.1-device.core
+set debug-file-directory /home/leehaewon/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.3.1/wearable/rootstraps/wearable-2.3.1-device.core/usr/lib/debug
+set solib-search-path /home/leehaewon/woof/woof_tizen/service/Debug
+dir /home/leehaewon/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.3.1/wearable/rootstraps/wearable-2.3.1-device.core/usr/src/debug
+file "/home/leehaewon/woof/woof_tizen/service/Debug/service"
+sharedlibrary

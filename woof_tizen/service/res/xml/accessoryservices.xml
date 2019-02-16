@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<application name="org.woof">
+		<serviceProfile
+				autoLaunchAppId="org.woof.app2"
+				id="/sample/filetransfer"
+				name="test"
+				role="provider"
+				version="2.0">
+			<supportedTransports>
+				<transport type="TRANSPORT_BT"/>
+                <transport type="TRANSPORT_WIFI"/>
+			</supportedTransports>
+			<serviceChannel
+				id="107"
+				dataRate="low"
+				priority="low"
+				reliability="enable">
+			</serviceChannel>
+		</serviceProfile>
+	</application>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.woof" version="1.0.0">
+    <profile name="wearable"/>
+    <ui-application appid="org.woof" exec="main" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>woof</label>
+        <icon>test.png</icon>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/bluetooth</privilege>
+        <privilege>http://tizen.org/privilege/keymanager</privilege>
+        <privilege>http://tizen.org/privilege/haptic</privilege>
+        <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+        <privilege>http://tizen.org/privilege/datasharing</privilege>
+        <privilege>http://tizen.org/privilege/display</privilege>
+        <privilege>http://tizen.org/privilege/power</privilege>
+        <privilege>http://tizen.org/privilege/content.write</privilege>
+    </privileges>
+    <feature name="http://tizen.org/feature/network.bluetooth.le">true</feature>
+    <feature name="http://tizen.org/feature/network.bluetooth">true</feature>
+    <feature name="http://tizen.org/feature/screen.size.normal">true</feature>
+    <feature name="http://tizen.org/feature/network.tethering.bluetooth">true</feature>
+    <feature name="http://tizen.org/feature/network.bluetooth.opp">true</feature>
+    <feature name="http://tizen.org/feature/screen.shape.circle">true</feature>
+    <feature name="http://tizen.org/feature/network.push">true</feature>
+</manifest>
