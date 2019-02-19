@@ -16,7 +16,7 @@ int vibrate_pattern[5][4] = {
 							{0, 20000, 0, 0},
 							{1, 0, 20, 50000},
 							{1, 0, 20, 50000},
-							{0, 1000, 0, 0}
+							{0, 10000, 0, 0}
 							};
 
 int vibrate_pattern2[5][4] = {
@@ -105,9 +105,9 @@ vibrate_stop(void *data, Evas_Object *obj, void *event_info)
 			ad->timer_count = ad->timer_full + 1;
 		}
 	/* Let window go to hide state. */
-	//elm_naviframe_item_pop(ad->img_layout); // pop할떈 naviframe 인자로 넣자
-	evas_object_hide(ad->img_layout);
-	evas_object_hide(ad->img);
+	elm_naviframe_item_pop(ad->naviframe); // pop할떈 naviframe 인자로 넣자
+	//evas_object_hide(ad->img_layout);
+	//evas_object_hide(ad->img);
 	//elm_win_lower(ad->win);
 	if(device_power_wakeup(true) == 0)
 		dlog_print(DLOG_DEBUG, LOG_TAG, "device dim sleep !");
@@ -677,7 +677,8 @@ setting_sound_icon_file_name(char *file_name) {
 		_popup_message("invalid file name! not setting.");
 	}
 	else {
-		image_list[index] = icon_name;
+		icon_image_path[index] = icon_name;
+		_popup_message("setting file write success!");
 //		if(set_file_to_icon_path(index, icon_name)) {
 //			dlog_print(DLOG_INFO, LOG_TAG, "[v] true");
 //			_popup_message("setting file write success!");
